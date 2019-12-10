@@ -1,11 +1,9 @@
 import React from 'react';
-import Login from './views/Login';
-import './App.css';
+import Routes from './routes';
+import './styles/App.css';
 
-function App() {
-  return (
-    <Login></Login>
-  );
-}
-
+const App = () => <Routes />;
 export default App;
+
+
+
