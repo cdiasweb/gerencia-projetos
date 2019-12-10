@@ -1,28 +1,17 @@
-import React from 'react';
-import './Login.css';
+import React from "react";
+import "./SignUp.css";
+
 import logo from '../../assets/logo.svg';
 
-
-
-export default class Login extends React.Component {
-
-    constuctor() {
-        this.routeChange = this.routeChange.bind(this);
-    }
-
-    routeChange() {
-        let path = `signup`;
-        window.location.hash(path);
-    }
-
+export default class SignUp extends React.Component {
     render() {
         return (
             <div id="container_principal">
                 <div id="container_login_pos">
-                <div className="titulo_login">Login</div>
+                <div className="titulo_login">SignUp</div>
                     <div id="container_login">
                         <img alt="logo" className="logo" src={logo}></img>
-                        <form action="http://localhost:3333/autentica" method="POST">
+                        <form action="http://localhost:3333/signup" method="POST">
                             <input type="text" name="username" id="login_user" placeholder="Usuário" required autoComplete="off"/>
                             <input type="password" name="password" id="login_pass" placeholder="Senha" required/>
                             <button>Acessar</button>
@@ -31,7 +20,7 @@ export default class Login extends React.Component {
 
                     <div id="container_signup_forgot">
                         <a href="#">Esqueci minha senha</a>
-                        <button onClick={this.routeChange}>Sign Up</button>
+                        <button>Sign Up</button>
                     </div>
                 </div>
                 
