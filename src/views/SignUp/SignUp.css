@@ -1,0 +1,5 @@
+.content_signup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

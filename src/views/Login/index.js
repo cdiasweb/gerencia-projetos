@@ -1,6 +1,7 @@
 import React from 'react';
 import './Login.css';
 import logo from '../../assets/logo.svg';
+import {Link} from "react-router-dom";
 
 
 
@@ -30,8 +31,8 @@ export default class Login extends React.Component {
                     </div>
 
                     <div id="container_signup_forgot">
-                        <a href="#">Esqueci minha senha</a>
-                        <button onClick={this.routeChange}>Sign Up</button>
+                        <Link to="/forgot">Esqueci minha senha</Link>
+                        <Link to="/signup">SignUp</Link>
                     </div>
                 </div>
                 
